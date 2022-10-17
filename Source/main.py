@@ -1,15 +1,25 @@
-from nightmare.app import MDApp
-from PySimpleGui import PySimpleGui as sg
+from kivy.app import App
+from kivy.lang import Builder
 
-class menu(MDApp):
-    pass
+kv = '''
+floatLayout:
+    Button:
+        text: 'start'
+        size_hint: none, none
+        pos_hint: {'center_x 0.5', 'center_y 0.5'}
+        canvas.before:
+            PushMatrix:
+                Rotate:
+                    angle: 0
+                    origin: self.center
+        canvas.after:
+            PopMatrix
+'''
+    
+
+class menu(App):
+    def build(self):
+        return Builder.loadString(kv)
 
 if __name__ == "__main__":
     menu().run()
-
-def start():
-    option = "n"
-    while == "n"
-        option = input("quer criar uma conta para salvar?").lower()
-        if option != "s":
-            print("lol")
