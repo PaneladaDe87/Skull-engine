@@ -2,7 +2,7 @@ from kivy.app import App
 from kivy.lang import Builder
 
 kv = '''
-floatLayout:
+FloatLayout:
     Button:
         text: 'start'
         size_hint: none, none
