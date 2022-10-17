@@ -1,25 +1,9 @@
+import kivy
 from kivy.app import App
-from kivy.lang import Builder
+from kivy.uix.label import Label
 
-kv = '''
-FloatLayout:
-    Button:
-        text: 'start'
-        size_hint: none, none
-        pos_hint: {'center_x 0.5', 'center_y 0.5'}
-        canvas.before:
-            PushMatrix:
-                Rotate:
-                    angle: 0
-                    origin: self.center
-        canvas.after:
-            PopMatrix
-'''
-    
+class MainApp(App):
+    def Build(self):
+        return Label(text = "hello, world")
 
-class menu(App):
-    def build(self):
-        return Builder.loadString(kv)
-
-if __name__ == "__main__":
-    menu().run()
+MainApp().run()
