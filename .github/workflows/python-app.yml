@@ -16,6 +16,7 @@ jobs:
         uses: ArtemSBulgakov/buildozer-action@v1
         id: buildozer
         with:
+          repository_root: master
           workdir: main
           buildozer_version: stable
 
