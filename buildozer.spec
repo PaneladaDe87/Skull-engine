@@ -3,7 +3,7 @@ title = Skull Engine 3D
  package.domain = com.nightmaregames
   
  source.dir = main
- source.include_exts = py,png,jpg,kv,atlas 
+ source.include_exts = py,png,jpg,kv,atlas
   
  version = 0.1 
  requirements = python3,kivy 
