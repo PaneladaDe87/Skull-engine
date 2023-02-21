@@ -2,7 +2,7 @@ title = Skull Engine 3D
  package.name = skullengine
  package.domain = com.nightmaregames
   
- source.dir = . 
+ source.dir = main
  source.include_exts = py,png,jpg,kv,atlas 
   
  version = 0.1 
